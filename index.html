@@ -161,6 +161,51 @@
     </header>
     <!-- main part -->
     <main class="container mx-auto">
+        <!-- Deal of the day section -->
+        <section class="mt-48 p-4 flex flex-col lg:justify-between lg:flex-row items-center">
+            <section class="text-center lg:text-start">
+                <h1 class="text-5xl font-extrabold">Deal of the day</h1>
+                <p class="text-lg font-semibold">Contrary to popular belief, is not simply random text. It has roots in a piece of classical<br>Latin literature from 45 BC, making it over 2000 years old.</p>
+            </section>
+            <section>
+                <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                    <div class="flex flex-col">
+                        <div class="flex items-center gap-2">
+                            <span class="countdown font-mono text-5xl">
+                                <span style="--value:15;"></span>
+                            </span>
+                            <p class="font-medium text-lg">:</p>
+                        </div>
+                        <div>Days</div>
+                    </div> 
+                    <div class="flex flex-col">
+                        <div class="flex items-center gap-2">
+                            <span class="countdown font-mono text-5xl">
+                                <span style="--value:10;"></span>
+                            </span>
+                            <p class="font-medium text-lg">:</p>
+                        </div>
+                        <div>Hours</div>
+                    </div> 
+                    <div class="flex flex-col">
+                        <div class="flex items-center gap-2">
+                            <span class="countdown font-mono text-5xl">
+                                <span style="--value:25;"></span>
+                            </span>
+                            <p class="font-medium text-lg">:</p>
+                        </div>
+                        <div>Minutes</div>
+                    </div> 
+                    <div class="flex flex-col">
+                        <span class="countdown font-mono text-5xl">
+                        <span style="--value:50;"></span>
+                        </span>
+                        sec
+                    </div>
+                </div>
+            </section>
+        </section>
+
 
         <!-- Meet section -->
     <section class="container mx-auto mt-10 p-4">
@@ -171,7 +216,7 @@
                 <h1 class="mb-5 text-5xl font-bold">Meet the team section</h1>
                 <p class="mb-5">PContrary to popular belief, is not simply random text. It has roots in a piece of classical<br>
                     Latin literature from 45 BC, making it over 2000 years old.</p>
-                <div class="grid grid-cols-1 space-y-4 lg:grid-cols-4 gap-x-20 max-w-full">
+                <div class="grid grid-cols-1 space-y-4 md:grid-cols-2 lg:grid-cols-4 gap-x-20 max-w-full">
                     <div class="flex flex-col justify-center items-center">
                         <img src="./images/member1.png" alt="">
                         <div>
@@ -298,7 +343,7 @@
 
 
     <!-- footer part -->
-    <footer class="footer footer-center p-10 bg-base-200 text-base-content rounded">
+    <footer class="footer footer-center p-10 bg-base-200 text-base-content rounded bg-black text-white">
         <div class="flex">
             <img src="./images/logo.png" alt="">
             <h1>Fruit Brust</h1>
