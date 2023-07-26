@@ -24,6 +24,8 @@
             extend: {
             colors: {
                 primary: '#F85559',
+                rating : '#FBC0A8',
+                secondary: '#12121299',
             }
             }
         }
@@ -56,9 +58,9 @@
                 </div>
                 <!-- search part -->
                 <div class="navbar-end">
-                    <div class="form-control hidden lg:block bg-white w-72 rounded-full">
+                    <div class="form-control hidden lg:block md:block md:relative md:right-0 bg-white w-72 rounded-full">
                         <input type="text" placeholder="Search" class="input bg-transparent w-24" />
-                        <i class="fa-solid fa-magnifying-glass ml-36"></i>
+                        <i class="text-primary fa-solid fa-magnifying-glass ml-36"></i>
                         <!-- <div class="lg:hidden">
                             <img src="./whychoose1.png" alt="">
                         </div> -->
@@ -121,7 +123,7 @@
                         <img src="./images/fruit1.png" alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title text-xl font-medium">Grapes</h2>
+                        <h2 class="card-title text-xl font-medium ">Grapes</h2>
                     </div>
                 </div>
                 <!-- fruit-2 -->
@@ -130,7 +132,7 @@
                         <img src="./images/fruit2.png" alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title text-xl font-medium">Orange</h2>
+                        <h2 class="card-title text-xl font-medium ">Orange</h2>
                     </div>
                 </div>
                 <!-- fruit-3 -->
@@ -139,7 +141,7 @@
                         <img src="./images/fruit3.png" alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title text-xl font-medium">Mango</h2>
+                        <h2 class="card-title text-xl font-medium ">Mango</h2>
                     </div>
                 </div>
                 <!-- fruit-4 -->
@@ -148,7 +150,7 @@
                         <img src="./images/fruit4.png" alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title text-xl font-medium">Strawberry</h2>
+                        <h2 class="card-title text-xl font-medium ">Strawberry</h2>
                     </div>
                 </div>
                 <!-- fruit-5 -->
@@ -157,7 +159,7 @@
                         <img src="./images/fruit5.png" alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title text-xl font-medium">Dalim</h2>
+                        <h2 class="card-title text-xl font-medium ">Dalim</h2>
                     </div>
                 </div>
             </div>
@@ -167,47 +169,47 @@
 
     
     <!-- main part -->
-    <main class="container mx-auto">
+    <main class="container mx-auto mt-36">
         <!-- Deal of the day section -->
         <section class="mt-48 p-4 flex flex-col lg:justify-between lg:flex-row items-center">
             <section class="text-center lg:text-start">
                 <h1 class="text-5xl font-extrabold">Deal of the day</h1>
-                <p class="text-lg font-semibold">Contrary to popular belief, is not simply random text. It has roots in a piece of classical<br>Latin literature from 45 BC, making it over 2000 years old.</p>
+                <p class="text-lg font-semibold text-secondary lg:mt-6 mb-12">Contrary to popular belief, is not simply random text. It has roots in a piece of classical<br>Latin literature from 45 BC, making it over 2000 years old.</p>
             </section>
             <section>
-                <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                <div class="grid grid-flow-col gap-4 text-center auto-cols-max">
                     <div class="flex flex-col">
                         <div class="flex items-center gap-2">
-                            <span class="countdown font-mono text-5xl">
+                            <span class="countdown font-mono text-5xl font-extrabold text-black">
                                 <span style="--value:15;"></span>
                             </span>
-                            <p class="font-medium text-lg">:</p>
+                            <p class="font-medium text-lg ml-2">:</p>
                         </div>
-                        <div>Days</div>
+                        <div class="text-base font-medium text-secondary">Days</div>
                     </div> 
                     <div class="flex flex-col">
                         <div class="flex items-center gap-2">
-                            <span class="countdown font-mono text-5xl">
+                            <span class="countdown font-mono text-5xl font-extrabold text-black">
                                 <span style="--value:10;"></span>
                             </span>
-                            <p class="font-medium text-lg">:</p>
+                            <p class="font-medium text-lg ml-2">:</p>
                         </div>
-                        <div>Hours</div>
+                        <div class="text-base font-medium text-secondary">Hours</div>
                     </div> 
                     <div class="flex flex-col">
                         <div class="flex items-center gap-2">
-                            <span class="countdown font-mono text-5xl">
+                            <span class="countdown font-mono text-5xl font-extrabold text-black">
                                 <span style="--value:25;"></span>
                             </span>
-                            <p class="font-medium text-lg">:</p>
+                            <p class="font-medium text-lg ml-2">:</p>
                         </div>
-                        <div>Minutes</div>
+                        <div class="text-base font-medium text-secondary">Minutes</div>
                     </div> 
                     <div class="flex flex-col">
-                        <span class="countdown font-mono text-5xl">
+                        <span class="countdown font-mono text font-extrabold text-5xl text-black">
                         <span style="--value:50;"></span>
                         </span>
-                        sec
+                        <div class="text-base font-medium text-secondary">Seconds</div>
                     </div>
                 </div>
             </section>
@@ -217,80 +219,80 @@
         <!-- Types of fruit -->
         <section class="p-4">
             <section class="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-6">
-                <div class="card bg-base-100 shadow-xl">
+                <div class="card border">
                     <figure class="px-10 pt-10">
                         <img src="./images/fruit6.png" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title text-xl font-medium">12.90$ - 18.85$</h2>
-                        <hr class="w-8/12 bg-black">
-                        <p>Apples</p>
+                        <h2 class="card-title text-2xl font-bold ">12.90$ - 18.85$</h2>
+                        <hr class="w-8/12 bg-black my-6">
+                        <p class="text-base font-medium text-secondary">Apples</p>
                         <div>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star-half-stroke"></i>
-                            <i class="fa-regular fa-star-half-stroke"></i>
-                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <i class="text-primary fa-solid fa-star"></i>
+                            <i class="text-primary fa-solid fa-star"></i>
+                            <i class="text-rating fa-regular fa-star-half-stroke"></i>
+                            <i class="text-rating fa-regular fa-star"></i>
+                            <i class="text-rating fa-regular fa-star"></i>
                         </div>
                         <div class="card-actions">
                         <button class="">Details</button>
                         </div>
                     </div>
                 </div>
-                <div class="card bg-base-100 shadow-xl">
+                <div class="card border">
                     <figure class="px-10 pt-10">
                         <img src="./images/fruit7.png" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title text-xl font-medium">12.90$ - 18.85$</h2>
-                        <hr class="w-8/12 bg-black">
-                        <p>Apples</p>
+                        <h2 class="card-title text-2xl font-bold ">12.90$ - 18.85$</h2>
+                        <hr class="w-8/12 bg-black my-6">
+                        <p class="text-base font-medium text-secondary">Orange</p>
                         <div>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star-half-stroke"></i>
-                            <i class="fa-regular fa-star-half-stroke"></i>
-                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <i class="text-primary fa-solid fa-star"></i>
+                            <i class="text-primary fa-solid fa-star"></i>
+                            <i class="text-rating fa-regular fa-star-half-stroke"></i>
+                            <i class="text-rating fa-regular fa-star"></i>
+                            <i class="text-rating fa-regular fa-star"></i>
                         </div>
                         <div class="card-actions">
                         <button class="">Details</button>
                         </div>
                     </div>
                 </div>
-                <div class="card bg-base-100 shadow-xl">
+                <div class="card border">
                     <figure class="px-10 pt-10">
                         <img src="./images/fruit8.png" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title text-xl font-medium">12.90$ - 18.85$</h2>
-                        <hr class="w-8/12 bg-black">
-                        <p>Apples</p>
+                        <h2 class="card-title text-2xl font-bold">12.90$ - 18.85$</h2>
+                        <hr class="w-8/12 bg-black my-6">
+                        <p class="text-base font-medium text-secondary">Red Dragon</p>
                         <div>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star-half-stroke"></i>
-                            <i class="fa-regular fa-star-half-stroke"></i>
-                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <i class="text-primary fa-solid fa-star"></i>
+                            <i class="text-primary fa-solid fa-star"></i>
+                            <i class="text-rating fa-regular fa-star-half-stroke"></i>
+                            <i class="text-rating fa-regular fa-star"></i>
+                            <i class="text-rating fa-regular fa-star"></i>
                         </div>
                         <div class="card-actions">
                         <button class="">Details</button>
                         </div>
                     </div>
                 </div>
-                <div class="card bg-base-100 shadow-xl">
+                <div class="card border">
                     <figure class="px-10 pt-10">
                         <img src="./images/fruit9.png" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title text-xl font-medium">12.90$ - 18.85$</h2>
-                        <hr class="w-8/12 bg-black">
-                        <p>Apples</p>
-                        <div>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star-half-stroke"></i>
-                            <i class="fa-regular fa-star-half-stroke"></i>
-                            <i class="fa-regular fa-star-half-stroke"></i>
+                        <h2 class="card-title text-2xl font-bold ">12.90$ - 18.85$</h2>
+                        <hr class="w-8/12 bg-black my-6">
+                        <p class="text-base font-medium text-secondary">Banana</p>
+                        <div class="text-red">
+                            <i class="text-primary fa-solid fa-star"></i>
+                            <i class="text-primary fa-solid fa-star"></i>
+                            <i class="text-rating fa-regular fa-star-half-stroke"></i>
+                            <i class="text-rating fa-regular fa-star"></i>
+                            <i class="text-rating fa-regular fa-star"></i>
                         </div>
                         <div class="card-actions">
                         <button class="">Details</button>
@@ -321,9 +323,9 @@
                             <p>Fruit Expert</p>
                         </div>
                         <div>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <i class="text-primary fa-solid fa-star"></i>
+                            <i class="text-primary fa-solid fa-star"></i>
+                            <i class="text-primary fa-regular fa-star-half-stroke"></i>
                             
                         </div>
                     </div>
@@ -332,11 +334,11 @@
                         <h3>Awlad Hossain</h3>
                         <p>Fruit Expert</p>
                         <div>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star-half-stroke"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
+                            <i class="text-primary fa-solid fa-star"></i>
+                            <i class="text-primary fa-solid fa-star"></i>
+                            <i class="text-primary fa-regular fa-star-half-stroke"></i>
+                            <i class="text-primary fa-regular fa-star"></i>
+                            <i class="text-primary fa-regular fa-star"></i>
                         </div>
                     </div>
                     <div class="flex flex-col justify-center items-center">
@@ -344,11 +346,11 @@
                         <h3>Awlad Hossain</h3>
                         <p>Fruit Expert</p>
                         <div>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star-half-stroke"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
+                            <i class="text-primary fa-solid fa-star"></i>
+                            <i class="text-primary fa-solid fa-star"></i>
+                            <i class="text-primary fa-regular fa-star-half-stroke"></i>
+                            <i class="text-primary fa-regular fa-star"></i>
+                            <i class="text-primary fa-regular fa-star"></i>
                         </div>
                     </div>
                     <div class="flex flex-col justify-center items-center">
@@ -356,11 +358,11 @@
                         <h3>Awlad Hossain</h3>
                         <p>Fruit Expert</p>
                         <div>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star-half-stroke"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
+                            <i class="text-primary fa-solid fa-star"></i>
+                            <i class="text-primary fa-solid fa-star"></i>
+                            <i class="text-primary fa-regular fa-star-half-stroke"></i>
+                            <i class="text-primary fa-regular fa-star"></i>
+                            <i class="text-primary fa-regular fa-star"></i>
                         </div>
                     </div>
                 </div>
@@ -453,11 +455,11 @@
         </div> 
         <div>
             <div class="grid grid-flow-col gap-4">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star-half-stroke"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
+                <i class="text-primary fa-solid fa-star"></i>
+                <i class="text-primary fa-solid fa-star"></i>
+                <i class="text-primary fa-regular fa-star-half-stroke"></i>
+                <i class="text-primary fa-regular fa-star"></i>
+                <i class="text-primary fa-regular fa-star"></i>
             </div>
         </div> 
         <div>
