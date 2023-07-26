@@ -61,9 +61,6 @@
                     <div class="form-control hidden lg:block md:block md:relative md:right-0 bg-white w-72 rounded-full">
                         <input type="text" placeholder="Search" class="input bg-transparent w-24" />
                         <i class="text-primary fa-solid fa-magnifying-glass ml-36"></i>
-                        <!-- <div class="lg:hidden">
-                            <img src="./whychoose1.png" alt="">
-                        </div> -->
                     </div>
                 </div>
             </div>
@@ -373,7 +370,7 @@
 
 
         <!-- Dedicated team section -->
-        <section class="container mx-auto text-center p-4">
+        <section class="container mx-auto text-center p-4 mb-24">
             <h1 class="text-5xl text-black font-extrabold">Why Choose Us</h1>
             <p class="text-lg font-medium mt-6 mb-12">Contrary to popular belief, is not simply random text. It has roots in a piece of classical<br>Latin literature from 45 BC, making it over 2000 years old.</p>
             <div class="flex flex-col lg:flex-row gap-4">
@@ -442,29 +439,34 @@
 
 
     <!-- footer part -->
-    <footer class="footer footer-center p-10 bg-base-200 text-base-content rounded bg-black text-white">
+    <footer class="footer footer-center p-10 text-base-content rounded bg-black text-white">
         <div class="flex">
             <img src="./images/logo.png" alt="">
-            <h1>Fruit Brust</h1>
+            <h1 class="text-5xl font-bold ml-2">Fruit Brust</h1>
         </div>
-        <div class="grid grid-flow-col gap-4">
-            <a class="link link-hover">About us</a> 
-            <a class="link link-hover">Contact</a> 
-            <a class="link link-hover">Jobs</a> 
-            <a class="link link-hover">Press kit</a>
-        </div> 
-        <div>
-            <div class="grid grid-flow-col gap-4">
-                <i class="text-primary fa-solid fa-star"></i>
-                <i class="text-primary fa-solid fa-star"></i>
-                <i class="text-primary fa-regular fa-star-half-stroke"></i>
-                <i class="text-primary fa-regular fa-star"></i>
-                <i class="text-primary fa-regular fa-star"></i>
+        <div class="grid grid-cols-1 gap-5 lg:grid-flow-col lg:gap-10">
+            <div class="flex gap-8 lg:gap-14">
+                <a class="link link-hover text-xs lg:text-lg font-semibold">Home</a> 
+                <a class="link link-hover text-xs lg:text-lg font-semibold">About us</a> 
+                <a class="link link-hover text-xs lg:text-lg font-semibold">Shop</a> 
+                <a class="link link-hover text-xs lg:text-lg font-semibold">All Fruits</a>
+            </div> 
+            <div class="flex gap-8 lg:gap-14">
+                <a class="link link-hover text-xs lg:text-lg font-semibold">Support</a>
+                <a class="link link-hover text-xs lg:text-lg font-semibold">My Account</a>
             </div>
         </div> 
-        <div>
-            <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
-        </div>
+        <div class="grid grid-cols-1 lg:grid-flow-col gap-4">
+            <div class="flex gap-8 lg:gap-14">
+                <div class="flex gap-8 lg:gap-10">
+                    <i class="text-xl lg:text-4xl fa-brands fa-twitter"></i>
+                    <i class="text-xl lg:text-4xl fa-brands fa-facebook"></i>
+                    <i class="text-xl lg:text-4xl fa-brands fa-youtube"></i>
+                    <i class="text-xl lg:text-4xl fa-brands fa-linkedin-in"></i>
+                    <i class="text-xl lg:text-4xl fa-brands fa-apple"></i>
+                </div>
+            </div>
+        </div> 
     </footer>
 </body>
 </html>
