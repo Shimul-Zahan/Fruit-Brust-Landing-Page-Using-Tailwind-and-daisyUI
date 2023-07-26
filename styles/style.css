@@ -38,3 +38,10 @@
     border-radius: 8px;
     background: rgba(19, 19, 19, 0.7);
 }
+.ruller{
+    border: 1px solid black;
+}
+.ruller-right{
+    position: relative;
+    left: 255px;
+}
