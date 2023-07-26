@@ -1,0 +1,15 @@
+.gradient-on-image {
+    position: relative; /* Required to position the gradient layer */
+}
+
+/* Define the gradient background */
+.gradient-on-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 8px;
+    background: linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%);
+}

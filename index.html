@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Brust landing page using tailwind</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/21a3ce7507.js" crossorigin="anonymous"></script>
+
+    <!-- heres daisy khala -->
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- custom component -->
+    <script>
+        tailwind.config = {
+        theme: {
+            extend: {
+            colors: {
+                background: {
+                    'hero-bg' : "url('./images/banner1.png')",
+                },
+            }
+            }
+        }
+        }
+    </script>
+
+</head>
+<body>
+    <header class="container mx-auto p-4">
+
+        <!-- navbae -->
+        <nav>
+            <div class="navbar bg-green-400">
+                <div class="navbar-start hidden lg:block">
+                    <div class="dropdown flex gap-5 list-none">
+                        <li><a>Homepage</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>About</a></li>
+                    </ul>
+                    </div>
+                </div>
+                <!-- logo image part -->
+                <div class="navbar-center">
+                    <div class="flex justify-center items-center">
+                        <img src="./images/logo.png" alt="">
+                        <h1>Fruit Brust</h1>
+                    </div>
+                </div>
+                <!-- search part -->
+                <div class="navbar-end">
+                    <div class="form-control hidden lg:block">
+                        <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+                        <div class="lg:hidden">
+                            <img src="./whychoose1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- Hero section -->
+        <div class=" relative">
+            <div class="absolute z-50 mt-20 w-full text-center">
+                <h1 class="text-5xl font-bold text-white">Exotic tastes at your<br>doorstep</h1>
+                <p class="py-6 text-white">We supply highly quality organic products</p>
+                <button class="btn btn-primary">Shop Now</button>
+            </div>
+            <div class="carousel min-h-[600px] w-full">
+                <!-- slide-1 -->
+                <div id="slide1" class="carousel-item relative w-full gradient-on-image" style="background-image: url(./images/banner1.png); background-size: cover;">
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div> 
+
+                <!-- slide 2 -->
+                <div id="slide2" class="carousel-item relative w-full gradient-on-image" style="background-image: url(./images/banner2.png); background-size: cover;">
+                    
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div> 
+
+                <!-- slide-3 -->
+                <div id="slide3" class="carousel-item relative w-full gradient-on-image" style="background-image: url(./images/banner3.png); background-size: cover;">
+                    
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a> 
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div> 
+
+                <!-- slide-4 -->
+                <div id="slide4" class="carousel-item relative w-full gradient-on-image" style="background-image: url(./images/banner4.png); background-size: cover;">
+                    
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a> 
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Types of fruit part -->
+        <section class="bg-gray-500 relative hidden lg:block">
+            <div class=" flex w-9/12 mx-auto bg-white shadow-white absolute -top-[136px] left-[180px]">
+                <div class="card">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/fruit1.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Grapes</h2>
+                    </div>
+                </div>
+                <!-- fruit-2 -->
+                <div class="card">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/fruit2.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Orange</h2>
+                    </div>
+                </div>
+                <!-- fruit-3 -->
+                <div class="card">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/fruit3.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Mango</h2>
+                    </div>
+                </div>
+                <!-- fruit-4 -->
+                <div class="card">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/fruit4.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Strawberry</h2>
+                    </div>
+                </div>
+                <!-- fruit-5 -->
+                <div class="card">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/fruit5.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Dalim</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- main part -->
+    <main class="container mx-auto">
+
+        <!-- Meet section -->
+    <section class="container mx-auto mt-10 p-4">
+            <div class="hero min-h-[600px]" style="background-image: url(./images/banner1.png);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+                <div class="">
+                <h1 class="mb-5 text-5xl font-bold">Meet the team section</h1>
+                <p class="mb-5">PContrary to popular belief, is not simply random text. It has roots in a piece of classical<br>
+                    Latin literature from 45 BC, making it over 2000 years old.</p>
+                <div class="grid grid-cols-1 space-y-4 lg:grid-cols-4 gap-x-20 max-w-full">
+                    <div class="flex flex-col justify-center items-center">
+                        <img src="./images/member1.png" alt="">
+                        <div>
+                            <h3>Awlad Hossain</h3>
+                            <p>Fruit Expert</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-center items-center">
+                        <img src="./images/member2.png" alt="">
+                        <h3>Awlad Hossain</h3>
+                        <p>Fruit Expert</p>
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-center items-center">
+                        <img src="./images/member3.png" alt="">
+                        <h3>Awlad Hossain</h3>
+                        <p>Fruit Expert</p>
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-center items-center">
+                        <img src="./images/member4.png" alt="">
+                        <h3>Awlad Hossain</h3>
+                        <p>Fruit Expert</p>
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+
+        <!-- Dedicated team section -->
+        <section class="container mx-auto text-center p-4">
+            <h1 class="text-5xl text-black font-extrabold">Why Choose Us</h1>
+            <p class="text-lg font-medium mt-6 mb-12">Contrary to popular belief, is not simply random text. It has roots in a piece of classical<br>Latin literature from 45 BC, making it over 2000 years old.</p>
+            <div class="flex flex-col lg:flex-row gap-4">
+                <!-- 1st col -->
+                <div class="grid flex-grow card text-start">
+                    <div>
+
+                    </div>
+                    <div class="">
+                        <h1>Dedicated Team</h1>
+                        <hr class="w-4 bg-black">
+                        <p>Professional employees are there for you to pick<br>the most amazing and fresh fruits.</p>
+                    </div>
+                    <div>
+
+                    </div>
+                    <div class="">
+                        <h1>Dedicated Team</h1>
+                        <hr class="w-4 bg-black">
+                        <p>Professional employees are there for you to pick<br>the most amazing and fresh fruits.</p>
+                    </div>
+                    <div>
+
+                    </div>
+                    <div class="">
+                        <h1>Dedicated Team</h1>
+                        <hr class="w-4 bg-black">
+                        <p>Professional employees are there for you to pick<br>the most amazing and fresh fruits.</p>
+                    </div>
+                </div>  
+                <!-- 2nd col -->
+                <div class="grid flex-grow card">
+                    <img src="./images/whychoose1.png" alt="" class="min-w-full">
+                </div>
+                <!-- 3rd col -->
+                <div class="grid flex-grow card text-end ">
+                    <div>
+
+                    </div>
+                    <div class="">
+                        <h1>Dedicated Team</h1>
+                        <hr class="w-4 bg-black">
+                        <p>Professional employees are there for you to pick<br>the most amazing and fresh fruits.</p>
+                    </div>
+                    <div>
+
+                    </div>
+                    <div class="">
+                        <h1>Dedicated Team</h1>
+                        <hr class="w-4 bg-black">
+                        <p>Professional employees are there for you to pick<br>the most amazing and fresh fruits.</p>
+                    </div>
+                    <div>
+
+                    </div>
+                    <div class="">
+                        <h1>Dedicated Team</h1>
+                        <hr class="w-4 bg-black">
+                        <p>Professional employees are there for you to pick<br>the most amazing and fresh fruits.</p>
+                    </div>
+                </div> 
+            </div>
+        </section>
+    </main>
+
+
+
+    <!-- footer part -->
+    <footer class="footer footer-center p-10 bg-base-200 text-base-content rounded">
+        <div class="flex">
+            <img src="./images/logo.png" alt="">
+            <h1>Fruit Brust</h1>
+        </div>
+        <div class="grid grid-flow-col gap-4">
+            <a class="link link-hover">About us</a> 
+            <a class="link link-hover">Contact</a> 
+            <a class="link link-hover">Jobs</a> 
+            <a class="link link-hover">Press kit</a>
+        </div> 
+        <div>
+            <div class="grid grid-flow-col gap-4">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </div> 
+        <div>
+            <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
+        </div>
+    </footer>
+</body>
+</html>
