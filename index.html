@@ -8,6 +8,11 @@
     <!-- icons -->
     <script src="https://kit.fontawesome.com/21a3ce7507.js" crossorigin="anonymous"></script>
 
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+
     <!-- heres daisy khala -->
         <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -18,29 +23,27 @@
         theme: {
             extend: {
             colors: {
-                background: {
-                    'hero-bg' : "url('./images/banner1.png')",
-                },
+                primary: '#F85559',
             }
             }
         }
         }
     </script>
 
+
 </head>
-<body>
+<body class="font-lato">
     <header class="container mx-auto p-4">
 
         <!-- navbae -->
-        <nav>
-            <div class="navbar bg-green-400">
+        <nav class="pt-5">
+            <div class="navbar bg-primary rounded-full lg:px-14 lg:py-7 mb-14">
                 <div class="navbar-start hidden lg:block">
-                    <div class="dropdown flex gap-5 list-none">
-                        <li><a>Homepage</a></li>
-                        <li><a>Portfolio</a></li>
-                        <li><a>About</a></li>
-                        <li><a>Portfolio</a></li>
-                        <li><a>About</a></li>
+                    <div class="dropdown flex gap-8 list-none">
+                        <li><a class="text-lg text-white font-medium">Home</a></li>
+                        <li><a class="text-lg text-white font-medium">About Us</a></li>
+                        <li><a class="text-lg text-white font-medium">Shop</a></li>
+                        <li><a class="text-lg text-white font-medium">All Fruits</a></li>
                     </ul>
                     </div>
                 </div>
@@ -48,16 +51,17 @@
                 <div class="navbar-center">
                     <div class="flex justify-center items-center">
                         <img src="./images/logo.png" alt="">
-                        <h1>Fruit Brust</h1>
-                    </div>
+                        <h1 class="text-lg font-medium lg:text-5xl lg:font-bold ml-2 text-white">Fruit Brust</h1>
+                    </div> 
                 </div>
                 <!-- search part -->
                 <div class="navbar-end">
-                    <div class="form-control hidden lg:block">
-                        <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
-                        <div class="lg:hidden">
+                    <div class="form-control hidden lg:block bg-white w-72 rounded-full">
+                        <input type="text" placeholder="Search" class="input bg-transparent w-24" />
+                        <i class="fa-solid fa-magnifying-glass ml-36"></i>
+                        <!-- <div class="lg:hidden">
                             <img src="./whychoose1.png" alt="">
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -67,9 +71,9 @@
         <!-- Hero section -->
         <div class=" relative">
             <div class="absolute z-50 mt-20 w-full text-center">
-                <h1 class="text-5xl font-bold text-white">Exotic tastes at your<br>doorstep</h1>
-                <p class="py-6 text-white">We supply highly quality organic products</p>
-                <button class="btn btn-primary">Shop Now</button>
+                <h1 class="text-7xl font-extrabold text-white">Exotic tastes at your<br>doorstep</h1>
+                <p class="py-6 text-xl font-medium text-white">We supply highly quality organic products</p>
+                <button class="btn btn-primary text-lg font-bold bg-primary border-none w-35 h-16">Shop Now</button>
             </div>
             <div class="carousel min-h-[600px] w-full">
                 <!-- slide-1 -->
@@ -110,14 +114,14 @@
         </div>
 
         <!-- Types of fruit part -->
-        <section class="bg-gray-500 relative hidden lg:block">
-            <div class=" flex w-9/12 mx-auto bg-white shadow-white absolute -top-[136px] left-[180px]">
+        <section class="relative hidden lg:block">
+            <div class=" flex w-9/12 mx-auto bg-white shadow-white absolute -top-[136px] left-[180px] rounded-s-lg box-shadow">
                 <div class="card">
                     <figure class="px-10 pt-10">
                         <img src="./images/fruit1.png" alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">Grapes</h2>
+                        <h2 class="card-title text-xl font-medium">Grapes</h2>
                     </div>
                 </div>
                 <!-- fruit-2 -->
@@ -126,7 +130,7 @@
                         <img src="./images/fruit2.png" alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">Orange</h2>
+                        <h2 class="card-title text-xl font-medium">Orange</h2>
                     </div>
                 </div>
                 <!-- fruit-3 -->
@@ -135,7 +139,7 @@
                         <img src="./images/fruit3.png" alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">Mango</h2>
+                        <h2 class="card-title text-xl font-medium">Mango</h2>
                     </div>
                 </div>
                 <!-- fruit-4 -->
@@ -144,7 +148,7 @@
                         <img src="./images/fruit4.png" alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">Strawberry</h2>
+                        <h2 class="card-title text-xl font-medium">Strawberry</h2>
                     </div>
                 </div>
                 <!-- fruit-5 -->
@@ -153,12 +157,15 @@
                         <img src="./images/fruit5.png" alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">Dalim</h2>
+                        <h2 class="card-title text-xl font-medium">Dalim</h2>
                     </div>
                 </div>
             </div>
         </section>
     </header>
+
+
+    
     <!-- main part -->
     <main class="container mx-auto">
         <!-- Deal of the day section -->
@@ -215,7 +222,7 @@
                         <img src="./images/fruit6.png" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">12.90$ - 18.85$</h2>
+                        <h2 class="card-title text-xl font-medium">12.90$ - 18.85$</h2>
                         <hr class="w-8/12 bg-black">
                         <p>Apples</p>
                         <div>
@@ -235,7 +242,7 @@
                         <img src="./images/fruit7.png" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">12.90$ - 18.85$</h2>
+                        <h2 class="card-title text-xl font-medium">12.90$ - 18.85$</h2>
                         <hr class="w-8/12 bg-black">
                         <p>Apples</p>
                         <div>
@@ -255,7 +262,7 @@
                         <img src="./images/fruit8.png" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">12.90$ - 18.85$</h2>
+                        <h2 class="card-title text-xl font-medium">12.90$ - 18.85$</h2>
                         <hr class="w-8/12 bg-black">
                         <p>Apples</p>
                         <div>
@@ -275,7 +282,7 @@
                         <img src="./images/fruit9.png" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">12.90$ - 18.85$</h2>
+                        <h2 class="card-title text-xl font-medium">12.90$ - 18.85$</h2>
                         <hr class="w-8/12 bg-black">
                         <p>Apples</p>
                         <div>
