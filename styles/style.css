@@ -2,7 +2,7 @@
     position: relative; /* Required to position the gradient layer */
 }
 
-/* Define the gradient background */
+/* background overlay for slider */
 .gradient-on-image::before {
     content: "";
     position: absolute;
@@ -25,6 +25,7 @@
     border: 1px solid rgba(18, 18, 18, 0.10);
 }
 
+/* background overlay for meet section */
 .meet-overlay{
     position:relative;
 }
